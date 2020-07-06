@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	
+	<!-- 扫描实体包 -->
+	<typeAliases>
+		<package  name="pers.deng.DatangTelecom.data.bean" />
+	</typeAliases>
+	
+	
+	<!-- 配置DAO接口的文件 -->
+	<mappers>
+		<!--映射DAO类配置文件-->
+		<!--  <mapper resource="com/deng/tally/data/dao/TallyDaoMapper.xml"/>-->
+
+		<mapper class="pers.deng.DatangTelecom.data.dao.ITaskDao" />
+		<mapper class="pers.deng.DatangTelecom.data.dao.IRoleDao" />
+		<mapper class="pers.deng.DatangTelecom.data.dao.IPlanDao" />
+		<mapper class="pers.deng.DatangTelecom.data.dao.IEmployeeDao" />
+	</mappers>
+	
+	
+</configuration>
